@@ -14,7 +14,7 @@ The South Africa Macroeconomic Database (SAMADB) is a relational database with >
 
 ## SAMADB Installation and Usage
 
-### R API Package
+### R API
 
 To install from CRAN, use
 ```r
@@ -30,7 +30,7 @@ help("samadb") # Open Documentation
 
 ***
 
-### Python API Package
+### Python API
 
 To install from pypi, open a terminal and execute
 ```
@@ -46,7 +46,7 @@ help(sm) # Overview of Package Functions
 *Notes*: The python package returns [polars](<https://www.pola.rs/>) DataFrame's. These can be converted to [pandas](<https://pandas.pydata.org/>) DataFrame's using the `.to_pandas()` method. The Python API is a bit different than the R API, due to the greater difficulty of dealing with variable labels in Python. It also presently has no options to transpose or export to Excel, which can however be achieved by converting to pandas and using the `.to_excel()` method. 
 
 *** 
-### Julia API Package
+### Julia API
 
 To install from the Julia package registry, use
 ```julia
