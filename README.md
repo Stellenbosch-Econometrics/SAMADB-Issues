@@ -1,4 +1,4 @@
-# SAMADB-Issues
+# South Africa Macroeconomic Database (SAMADB)
 
 <!-- badges -->
 [![CRAN status](https://www.r-pkg.org/badges/version/samadb)](https://cran.r-project.org/package=samadb) 
