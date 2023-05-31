@@ -11,3 +11,52 @@
 <!-- end badges -->
 
 The South Africa Macroeconomic Database (SAMADB) is a relational database with >10,000 macroeconomic time series for South Africa, obtained from the South African Reserve Bank (SARB) and Statistics South Africa (STATSSA) and updated on a weekly basis. It is accessible through API packages for [R](https://CRAN.R-project.org/package=samadb), [Python](https://pypi.org/project/samadb/) and [Julia](https://juliahub.com/ui/Search?q=SAMaDB&type=packages). This repo was created to allow you to report issues with the database or any of the API packages. More information about SAMADB is available in the introductory [presentation](https://github.com/Stellenbosch-Econometrics/SA-Nowcast/blob/main/presentation/SAMADB_Nowcasting.pdf).
+
+## SAMADB Installation and Usage
+
+### R API Package
+
+To install from CRAN, use
+```r
+install.packages("samadb")
+```
+Then attach the package with
+```r
+library(samadb)
+help("samadb") # Open Documentation 
+```
+
+*Notes*: The R API offers the broadest functionality, including the possibility to transpose data and export data to Excel. In the wide format, variable labels are attached to the series as attributes, and can be received using `collapse::vlabels()` or, together with names, using `collapse::namlab()`. Functions return a [data.table](<https://rdatatable.gitlab.io/data.table/>).
+
+***
+
+### Python API Package
+
+To install from pypi, open a terminal and execute
+```
+pip install samadb
+```
+Then import the package with
+
+```python
+import samadb as sm
+help(sm) # Overview of Package Functions
+```
+
+*Notes*: The python package returns [polars](<https://www.pola.rs/>) DataFrame's. These can be converted to [pandas](<https://pandas.pydata.org/>) DataFrame's using the `.to_pandas()` method. The Python API is a bit different than the R API, due to the greater difficulty of dealing with variable labels in Python. It also presently has no options to transpose or export to Excel, which can however be achieved by converting to pandas and using the `.to_excel()` method. 
+
+*** 
+### Install Julia API Package
+
+To install from the Julia package registry, use
+```julia
+using Pkg; Pkg.add("SAMaDB")
+```
+Then import the package with
+
+```julia
+import SAMaDB as sm
+?sm # Overview of Package Functions
+```
+
+*Notes*: The Julia API returns [DataFrame's](<https://dataframes.juliadata.org/stable/>), and is pretty much identical to the Python API i.e. you should access functions using *qualified names* as in Python, e.g. `sm.datasets()`. No functions are exported. 
