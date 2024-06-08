@@ -8,7 +8,7 @@
 ![pypi](https://img.shields.io/pypi/v/samadb.svg)
 ![versions](https://img.shields.io/pypi/pyversions/samadb.svg)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/samadb)
-[![SAMaDB](https://img.shields.io/badge/SAMaDB-v0.3.1-blue)](https://juliahub.com/ui/Packages/General/SAMaDB)
+[![Julia version](https://juliahub.com/docs/General/SAMaDB/stable/version.svg)](https://juliahub.com/ui/Packages/General/SAMaDB)
 <!-- end badges -->
 
 The South Africa Macroeconomic Database (SAMADB) is an open relational database with ~10,000 macroeconomic time series for South Africa, obtained from the South African Reserve Bank (SARB) and Statistics South Africa (STATSSA) and updated on a weekly basis via [EconData](<https://www.econdata.co.za/>) and automated scraping of the [SARB](<https://www.resbank.co.za/en/home/publications/quarterly-bulletin1/download-information-from-xlsx-data-files>) and [STATSSA](<https://www.statssa.gov.za/?page_id=1847>) websites. It is accessible through API packages for [R](https://CRAN.R-project.org/package=samadb), [Python](https://pypi.org/project/samadb/) and [Julia](https://juliahub.com/ui/Packages/General/SAMaDB). While the source code for SAMADB and the APIs remains private, this public repo provides guidance on API installation and allows you to report issues with the database or APIs. Each API has its own built-in documentation. More information about SAMADB is available in the introductory [presentation](<https://raw.githubusercontent.com/Stellenbosch-Econometrics/SA-Nowcast/main/presentation/SAMADB_Nowcasting.pdf>).  
